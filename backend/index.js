@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json());
 
 mongoose
-  .connect("mongodb://0.0.0.0:27017/Food-app")
+  .connect("mongodb://0.0.0.0:27017/Food-app") // here i have changed port prefix from localhost to 0.0.0.0. due to local error
   .then(() => {
     console.log("Connected to DB");
     
