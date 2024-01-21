@@ -7,7 +7,7 @@ function Productpage() {
   useEffect(() => {
     const fetchFooditems = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/api/dishes');
+        const response = await axios.get('https://feast9foood-app-az2u.vercel.app/api/dishes');
         setProducts(response.data); // Assuming the response contains an array of products
         console.log(response.data);
       } catch (error) {
