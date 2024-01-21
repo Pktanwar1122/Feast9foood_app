@@ -11,7 +11,7 @@ function Productpage() {
         setProducts(response.data); // Assuming the response contains an array of products
         console.log(response.data);
       } catch (error) {
-        console.lo('Error fetching data from backend: ', error);
+        console.log('Error fetching data from backend: ', error);
       }
     }
     fetchFooditems(); // Call the fetch function
